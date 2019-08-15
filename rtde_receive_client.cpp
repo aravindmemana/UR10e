@@ -17,7 +17,7 @@ std::vector<double> qact;
 }*/
 int main(int argc, char *argv[])
 {
-  RTDEReceiveInterface rtde_receive("192.168.1.100");  // opening an RTDE network connection
+  RTDEReceiveInterface rtde_receive("192.168.1.100");  // opening an RTDE network connection.Please change the IP address to your ROBOT's IP address,
   remove("ur10data.csv");                              // Deleting the temporary log file
   ofstream rbtdata;                                    // Initialising a log file
   rbtdata.open("ur10data.csv");                        // Opening a log file
